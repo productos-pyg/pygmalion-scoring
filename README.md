@@ -60,3 +60,5 @@ $ git add .
 $ git commit -am "make it better"
 $ git push heroku master
 ```
+
+Add the config vars on Settings in Heroku
