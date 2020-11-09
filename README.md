@@ -16,6 +16,7 @@ $ npm install
 
 Create .env file and add the env vars
 
+```
 MONGODB_URI=''
 JWT_SECRET=''
 FACEBOOK_ID=''
@@ -24,6 +25,7 @@ EMAIL_FROM=''
 GOOGLE_ID=''
 GOOGLE_SECRET=''
 GMAIL_REFRESH_TOKEN=''
+```
 
 ### Client - React
 
