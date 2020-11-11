@@ -37,7 +37,8 @@ const Topbar = ({
     // </nav>
     <Navbar bg="primary" expand="md">
       <Navbar.Brand href="/">
-        <h3 className="text-secondary">Pygma-Scoring</h3>
+       // <h3 className="text-secondary">Pygma-Scoring</h3>
+       <img src="./img/Pyg - Scoring.png"></img>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
