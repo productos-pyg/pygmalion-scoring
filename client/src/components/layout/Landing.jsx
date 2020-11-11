@@ -6,9 +6,9 @@ const Landing = function () {
     <section className="landing">
       <div className="dark-overlay">
         <div className="landing-inner">
-          <h1 className="x-large">Scoring-Robot</h1>
+          <h1 className="x-large">Pygmalion Scoring</h1>
           <p className="lead">
-            Plataforma de sistema de puntajes para competencias de robótica educativa
+            Plataforma de puntuación para competencias de robótica educativa
           </p>
 
           <div className="buttons m-1">
