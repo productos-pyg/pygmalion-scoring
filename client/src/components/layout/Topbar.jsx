@@ -37,7 +37,7 @@ const Topbar = ({
     // </nav>
     <Navbar bg="primary" expand="md">
       <Navbar.Brand href="/">
-       <img src="../img/Logo.png"></img>
+       <img src= { require('./images/' + this.state.fileName) }></img>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
