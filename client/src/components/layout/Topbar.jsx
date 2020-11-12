@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { authActions } from "../../redux/actions";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
+import Logo from './img/Logo.png';
 
 const Topbar = ({
   isAuth,
@@ -37,7 +38,7 @@ const Topbar = ({
     // </nav>
     <Navbar bg="primary" expand="md">
       <Navbar.Brand href="/">
-      <img src={ require('./img/Logo.png') } ></img>
+      <img src={Logo} alt="Logo"/>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
