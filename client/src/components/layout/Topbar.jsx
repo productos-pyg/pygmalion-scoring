@@ -35,7 +35,7 @@ const Topbar = ({
     //     <h3 className="text-secondary">Scoring-Robot</h3>
     //   </a>
     // </nav>
-    <Navbar bg="primary" expand="md">
+    <Navbar bg="light" expand="md">
       <Navbar.Brand href="/">
       <img src="./img/Logo.png" />
       </Navbar.Brand>
