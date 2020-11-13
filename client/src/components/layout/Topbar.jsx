@@ -35,9 +35,9 @@ const Topbar = ({
     //     <h3 className="text-secondary">Scoring-Robot</h3>
     //   </a>
     // </nav>
-    <Navbar bg="light" expand="md">
+    <Navbar bg="primary" expand="md">
       <Navbar.Brand href="/">
-      <img src="./img/Logo.png" />
+      <img src="./img/Logo.png" width="200px"/>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
