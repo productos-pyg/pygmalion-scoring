@@ -22,7 +22,7 @@ const ConfirmModal = ({ show = false, msg, alertType, onClose, onConfirm }) => {
           No
         </button>
         <button className="btn btn-success" onClick={onConfirm}>
-          Sí
+          Yes
         </button>
       </Modal.Footer>
     </Modal>

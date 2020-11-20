@@ -99,7 +99,7 @@ const Topbar = ({
             </NavDropdown>
           ) : (
             <Nav.Link href="/auth/login">
-              <i className="fas fa-sign-in"></i> Entry
+              <i className="fas fa-sign-in"></i> Login
             </Nav.Link>
           )}
         </Nav>
