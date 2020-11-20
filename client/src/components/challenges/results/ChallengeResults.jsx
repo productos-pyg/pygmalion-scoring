@@ -124,7 +124,7 @@ const ChallengeResults = ({
         <Fragment>
           <div className="d-flex d-flex justify-content-between align-items-center my-2">
             <div>
-              <ButtonBack className="btn btn-primary m-2">Atrás</ButtonBack>
+              <ButtonBack className="btn btn-primary m-2">Back</ButtonBack>
               {auth.isAuth &&
                 (auth.userAuth.role === "Admin" ||
                   auth.userAuth.role === "Judge") && (
@@ -137,7 +137,7 @@ const ChallengeResults = ({
                 )}
             </div>
             <button className="btn btn-info m-2" onClick={() => setSeconds(0)}>
-            Recharge ( <i className="fas fa-hourglass-start"></i> {seconds} )
+            Reload ( <i className="fas fa-hourglass-start"></i> {seconds} )
             </button>
           </div>
 
