@@ -99,7 +99,7 @@ const UserForm = ({
             <div className="card-body">
               <form className="form" onSubmit={handleSubmit}>
                 <div className="form-group">
-                  <label>Nombres*</label>
+                  <label>Name*</label>
                   <input
                     className="form-control"
                     type="text"
@@ -110,7 +110,7 @@ const UserForm = ({
                   />
                 </div>
                 <div className="form-group">
-                  <label>Apellidos*</label>
+                  <label>Last name*</label>
                   <input
                     className="form-control"
                     type="text"
@@ -132,7 +132,7 @@ const UserForm = ({
                   />
                 </div>
                 <div className="form-group">
-                  <label>Institución Educativa</label>
+                  <label>Educational institution</label>
                   <input
                     className="form-control"
                     type="text"
@@ -143,7 +143,7 @@ const UserForm = ({
                 </div>
 
                 <div className="form-group">
-                  <label>Ciudad</label>
+                  <label>City</label>
                   <input
                     className="form-control"
                     type="text"
@@ -154,7 +154,7 @@ const UserForm = ({
                 </div>
 
                 <div className="form-group">
-                  <label>País</label>
+                  <label>Country</label>
                   <input
                     className="form-control"
                     type="text"
@@ -182,7 +182,7 @@ const UserForm = ({
 
                 {userAuth.id === user._id && (
                   <div className="form-group">
-                    <label>Cuéntanos un poco sobre ti</label>
+                    <label>Tell us a bit about yourself</label>
                     <textarea
                       className="form-control"
                       placeholder="Una breve biografía tuya"
@@ -195,14 +195,14 @@ const UserForm = ({
 
                 {match.params.id && (
                   <div>
-                    <h3 className="pt-3">Cambiar Contraseña</h3>
-                    <p>Dejar en blanco para conservar la misma contraseña</p>
+                    <h3 className="pt-3">Change Password</h3>
+                    <p>Leave blank to keep the same password</p>
                   </div>
                 )}
 
                 <div className="form-row">
                   <div className="form-group mr-3">
-                    <label>Contraseña{!match.params.id && "*"}</label>
+                    <label>Password{!match.params.id && "*"}</label>
                     <input
                       type="password"
                       className="form-control"
@@ -215,7 +215,7 @@ const UserForm = ({
                   </div>
 
                   <div className="form-group">
-                    <label>Confirmar Contraseña{!match.params.id && "*"}</label>
+                    <label>Confirm Password{!match.params.id && "*"}</label>
                     <input
                       type="password"
                       className="form-control"
@@ -237,10 +237,10 @@ const UserForm = ({
                     {loading && (
                       <span className="spinner-border spinner-border-sm m-1"></span>
                     )}
-                    Guardar
+                    Save
                   </button>
                   <ButtonBack className="btn btn-outline-primary mr-2 mb-2">
-                    Cancelar
+                    Cancel
                   </ButtonBack>
                 </div>
               </form>

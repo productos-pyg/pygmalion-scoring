@@ -8,12 +8,12 @@ const Landing = function () {
         <div className="landing-inner">
           <h1 className="x-large">Pygmalion Scoring</h1>
           <p className="lead">
-            Plataforma de puntuación para competencias de robótica educativa
+          Scoring platform for educational robotics competitions
           </p>
 
           <div className="buttons m-1">
             <Link to="/events" className="btn btn-primary">
-              <i className="fas fa-calendar"></i> Ver Eventos
+              <i className="fas fa-calendar"></i> See events
             </Link>
           </div>
         </div>

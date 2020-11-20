@@ -31,7 +31,7 @@ const Sidebar = ({ isAuth, role, logout, toggleSidenavAction }) => {
           <div className="nav">
             <Link className="nav-link" to="/events" onClick={handleClick}>
               <div className="sb-nav-link-icon">
-                <i className="fas fa-calendar"></i> Eventos
+                <i className="fas fa-calendar"></i> Events
               </div>
             </Link>
 
@@ -45,7 +45,7 @@ const Sidebar = ({ isAuth, role, logout, toggleSidenavAction }) => {
                 </Link>
                 <Link className="nav-link" to="/admin/events" onClick={handleClick}>
                   <div className="sb-nav-link-icon">
-                    <i className="fas fa-calendar"></i> Eventos
+                    <i className="fas fa-calendar"></i> Events
                   </div>
                 </Link>
                 <Link
@@ -54,19 +54,19 @@ const Sidebar = ({ isAuth, role, logout, toggleSidenavAction }) => {
                   onClick={handleClick}
                 >
                   <div className="sb-nav-link-icon">
-                    <i className="fas fa-trophy"></i> Retos
+                    <i className="fas fa-trophy"></i> Challenges
                   </div>
                 </Link>
 
                 <Link className="nav-link" to="/admin/users" onClick={handleClick}>
                   <div className="sb-nav-link-icon">
-                    <i className="fas fa-user"></i> Usuarios
+                    <i className="fas fa-user"></i> Users
                   </div>
                 </Link>
 
                 <Link className="nav-link" to="/admin/teams" onClick={handleClick}>
                   <div className="sb-nav-link-icon">
-                    <i className="fas fa-users"></i> Equipos
+                    <i className="fas fa-users"></i> Teams
                   </div>
                 </Link>
 
@@ -76,7 +76,7 @@ const Sidebar = ({ isAuth, role, logout, toggleSidenavAction }) => {
                   onClick={handleClick}
                 >
                   <div className="sb-nav-link-icon">
-                    <i className="fas fa-cog"></i> Configuración
+                    <i className="fas fa-cog"></i> Setup
                   </div>
                 </Link>
               </>
@@ -84,24 +84,24 @@ const Sidebar = ({ isAuth, role, logout, toggleSidenavAction }) => {
 
             {isAuth ? (
               <>
-                <div className="sidenav-menu-heading">Usuario</div>
+                <div className="sidenav-menu-heading">User</div>
                 {role === "User" && (
                   <Link className="nav-link" to="/user/teams" onClick={handleClick}>
                     <div className="sb-nav-link-icon">
-                      <i className="fas fa-users"></i> Mis Equipos
+                      <i className="fas fa-users"></i> My teams
                     </div>
                   </Link>
                 )}
 
                 <Link className="nav-link" to="/user" onClick={handleClick}>
                   <div className="sb-nav-link-icon">
-                    <i className="fas fa-user"></i> Perfil
+                    <i className="fas fa-user"></i> Profile
                   </div>
                 </Link>
 
                 <Link className="nav-link" to="#" onClick={handleLogout}>
                   <div className="sb-nav-link-icon">
-                    <i className="fas fa-sign-out"></i> Salir
+                    <i className="fas fa-sign-out"></i> Exit
                   </div>
                 </Link>
               </>

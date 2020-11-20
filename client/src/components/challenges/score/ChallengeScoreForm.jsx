@@ -398,16 +398,16 @@ const CallengeScoreForm = ({
                     </table>
                   </div>
                 ) : (
-                  <p>No hay tareas asignadas a este reto</p>
+                  <p>There are no tasks assigned in this challenge</p>
                 )}
 
                 {/* Points */}
                 <hr />
                 <div className="form-group ">
-                  <h4>Total Puntos</h4>
+                  <h4>Bonus points</h4>
 
                   <div className="form-group">
-                    <label>Puntos por Bonus</label>
+                    <label>Bonus points</label>
                     <input
                       type="Number"
                       className="col-sm-4 form-control"
@@ -444,11 +444,11 @@ const CallengeScoreForm = ({
                     {teamsLoading && (
                       <span className="spinner-border spinner-border-sm m-1"></span>
                     )}
-                    Guardar
+                    Save
                   </button>
                   {Object.keys(turn).length === 0 && (
                     <ButtonBack className="btn btn-outline-primary mr-1 my-2">
-                      Cancelar
+                      Cancel
                     </ButtonBack>
                   )}
                 </div>

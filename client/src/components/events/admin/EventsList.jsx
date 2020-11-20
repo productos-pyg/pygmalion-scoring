@@ -34,23 +34,23 @@ const EventsList = ({
       ) : (
         <div className="card  mb-4">
           <div className="card-header">
-            <h2 className="text-primary">Administrar Eventos</h2>
+            <h2 className="text-primary">Manage Events</h2>
           </div>
 
           <div className="card-body">
             <Link className="btn btn-sm btn-primary mb-2" to={`${path}/add`}>
-              Agregar Evento
+              Add Evento
             </Link>
             <div className="table-responsive">
               <table className="table table-striped">
                 <thead className="thead-dark">
                   <tr>
-                    <th>Nombre Evento</th>
-                    <th>Nombre Corto</th>
-                    <th>Año</th>
-                    <th>Etapa</th>
-                    <th>Activo</th>
-                    <th>Editar/Eliminar</th>
+                    <th>Event name</th>
+                    <th>Short name</th>
+                    <th>Year</th>
+                    <th>Stage</th>
+                    <th>Active</th>
+                    <th>Edit/Remove</th>
                   </tr>
                 </thead>
                 <tbody>

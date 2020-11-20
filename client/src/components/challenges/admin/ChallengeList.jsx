@@ -25,22 +25,22 @@ const ChallengesList = ({
         <Fragment>
           <div className="card  mb-4">
             <div className="card-header">
-              <h2 className="text-primary">Administrar Retos</h2>
+              <h2 className="text-primary">Manage challenges</h2>
             </div>
 
             <div className="card-body ">
               <Link className="btn btn-sm btn-primary mb-2" to={`${path}/add`}>
-                Agregar Reto
+                Add Challenge
               </Link>
               <div className="table-responsive">
                 <table className="table table-striped ">
                   <thead className="thead-dark">
                     <tr>
-                      <th>Nombre Reto</th>
+                      <th>Challenge name</th>
                       <th>Slug</th>
-                      <th>Habilitado</th>
-                      <th>Categorías Habilitadas</th>
-                      <th>Editar/Eliminar</th>
+                      <th>Enabled</th>
+                      <th>Categories enabled</th>
+                      <th>Edit/Remove</th>
                     </tr>
                   </thead>
                   <tbody>

@@ -160,11 +160,11 @@ const ChallengeForm = ({
               </h2>
             </div>
             <div className="card-body">
-              <h4>Información</h4>
+              <h4>Information</h4>
               <form className="form" onSubmit={handleSubmit}>
                 <div className="form-group row">
                   <label className="col-sm-3 col-form-label" htmlFor="available">
-                    Habilitado{" "}
+                    Enable{" "}
                   </label>
                   <div className="col-sm">
                     <input
@@ -185,7 +185,7 @@ const ChallengeForm = ({
 
                 <div className="form-group row">
                   <label className="col-sm-3 col-form-label" htmlFor="name">
-                    Nombre Reto (*):
+                   Challenge name: (*):
                   </label>
                   <div className="col-sm-9">
                     <input
@@ -202,7 +202,7 @@ const ChallengeForm = ({
 
                 <div className="form-group row">
                   <label className="col-sm-3 col-form-label" htmlFor="slug">
-                    Slug Reto (*):
+                    Challenge Slug  (*):
                   </label>
                   <div className="col-sm-9">
                     <input
@@ -219,7 +219,7 @@ const ChallengeForm = ({
 
                 <div className="form-group row">
                   <label className="col-sm-3 col-form-label" htmlFor="imageURL">
-                    URL Imagen:
+                    URL Image:
                   </label>
                   <div className="col-sm-9">
                     <input
@@ -235,7 +235,7 @@ const ChallengeForm = ({
 
                 <div className="form-group row">
                   <label className="col-sm-3 col-form-label" htmlFor="description">
-                    Descripción:
+                    Description:
                   </label>
                   <div className="col-sm-9">
                     <textarea
@@ -250,7 +250,7 @@ const ChallengeForm = ({
 
                 <div className="form-group row">
                   <label className="col-sm-3 col-form-label" htmlFor="categories">
-                    Categorías:{" "}
+                    Categories:{" "}
                   </label>
                   <div className="col-sm">
                     <Select
@@ -268,7 +268,7 @@ const ChallengeForm = ({
 
                 <div className="form-group row">
                   <label className="col-sm-3 col-form-label" htmlFor="maxTeams">
-                    No. Máximo de Equipos permitido(*)
+                  Maximum number of teams allowed(*)
                   </label>
                   <div className="col-sm-3">
                     <input
@@ -284,11 +284,11 @@ const ChallengeForm = ({
                 </div>
 
                 <hr />
-                <h4>Turnos</h4>
+                <h4>Turns</h4>
 
                 <div className="form-group row">
                   <label className="col-sm-3 col-form-label" htmlFor="maxTeams">
-                    No. de Turnos por Equipo (*)
+                  Number of turns per team (*)
                   </label>
                   <div className="col-sm-3">
                     <input
@@ -305,7 +305,7 @@ const ChallengeForm = ({
 
                 <div className="form-group row">
                   <label className="col-sm-3 col-form-label" htmlFor="maxTeams">
-                    No. de Turnos Suma Top para Clasificar (*)
+                  Number of turns add top to classify (*)
                   </label>
                   <div className="col-sm-3">
                     <input
@@ -321,7 +321,7 @@ const ChallengeForm = ({
                 </div>
 
                 <hr />
-                <h4>Finales </h4>
+                <h4>Finals </h4>
                 <div className="form-group row">
                   <label className="col-sm-3 col-form-label" htmlFor="playoffs">
                     PlayOffs
@@ -340,7 +340,7 @@ const ChallengeForm = ({
 
                 <div className="form-group row">
                   <label className="col-sm-3 col-form-label" htmlFor="maxTeams">
-                    No. Equipos Finalistas
+                  Number of finalist teams
                   </label>
                   <div className="col-sm-3">
                     <input
@@ -356,11 +356,11 @@ const ChallengeForm = ({
                 </div>
 
                 <hr />
-                <h4>Tareas</h4>
+                <h4>Tasks</h4>
 
                 <div className="form-group row">
                   <label className="col-sm-3 col-form-label" htmlFor="maxTime">
-                    Tiempo Maxímo (segundos)
+                    Max time (seconds)
                   </label>
                   <div className="col-sm-3">
                     <input
@@ -378,9 +378,9 @@ const ChallengeForm = ({
                   <table className="table table-striped">
                     <thead className="thead-dark">
                       <tr>
-                        <th>Tarea</th>
-                        <th>Puntos</th>
-                        <th>Penalidad</th>
+                        <th>Task</th>
+                        <th>Points</th>
+                        <th>Penalty</th>
                         <th></th>
                       </tr>
                     </thead>
@@ -401,7 +401,7 @@ const ChallengeForm = ({
 
                 <div className="form-group row">
                   <label className="col-sm-3 col-form-label" htmlFor="taskSecuence">
-                    Tareas en secuencia
+                  Tasks in sequence
                   </label>
                   <div className="col-sm">
                     <input
@@ -420,7 +420,7 @@ const ChallengeForm = ({
 
                 <div className="form-group row">
                   <label className="col-sm-3 col-form-label" htmlFor="stopTime">
-                    Detener tiempo última tarea
+                  Stop time on last task
                   </label>
                   <div className="col-sm">
                     <input
@@ -439,7 +439,7 @@ const ChallengeForm = ({
 
                 <div className="form-group row">
                   <label className="col-sm-3 col-form-label" htmlFor="bonusType">
-                    Puntaje Bonus
+                  Bonus score
                   </label>
                   <div className="col-sm-6">
                     <select
@@ -449,9 +449,9 @@ const ChallengeForm = ({
                       value={bonusType}
                       onChange={handleChange}
                     >
-                      <option value="">Ninguno</option>
-                      <option value="timer">Sumar tiempo restante Timer</option>
-                      <option value="manual">Ingresar manualmente</option>
+                      <option value="">None</option>
+                      <option value="timer">Add remaining time</option>
+                      <option value="manual">Enter manually</option>
                     </select>
                   </div>
                 </div>
@@ -467,10 +467,10 @@ const ChallengeForm = ({
                     {loading && (
                       <span className="spinner-border spinner-border-sm mr-1"></span>
                     )}
-                    Guardar
+                    Save
                   </button>
                   <ButtonBack className="btn btn-outline-primary mr-2 mb-2">
-                    Cancelar
+                    Cancel
                   </ButtonBack>
                 </div>
               </form>

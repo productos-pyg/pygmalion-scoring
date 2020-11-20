@@ -6,7 +6,7 @@ const Footer = () => {
       <footer className="sticky-footer bg-light">
         <div className="container my-auto">
           <div className="copyright text-center my-auto">
-            <span>Copyright &copy; Scoring-Robot 2020</span>
+            <span>Copyright &copy; Pygmalion Scoring 2020</span>
           </div>
         </div>
       </footer>

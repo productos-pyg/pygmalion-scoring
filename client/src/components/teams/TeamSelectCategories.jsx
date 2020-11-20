@@ -4,7 +4,7 @@ const TeamSelectCategories = ({ options = [], category, handleChange }) => {
   return (
     <div className="form-group row">
       <label className="col-md-4 col-form-group" htmlFor="category">
-        Categoría (*)
+        Categorie (*)
       </label>
       <div className="col-md">
         <select

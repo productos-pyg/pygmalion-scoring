@@ -78,7 +78,7 @@ const ChallengeResultTeamItem = ({
               <div className="container m-2 d-flex justify-content-md-center">
                 <div className="card w-75">
                   <div className="card-body">
-                    <h5 className="text-primary">Turnos Calificados {team.name}</h5>
+                    <h5 className="text-primary">Qualified Turns{team.name}</h5>
 
                     {"turns" in team && team.turns.length > 0 ? (
                       team.turns.map((turn, index) => (
@@ -93,7 +93,7 @@ const ChallengeResultTeamItem = ({
                         />
                       ))
                     ) : (
-                      <p>No hay turnos registrados</p>
+                      <p>No registered turns</p>
                     )}
                   </div>
                 </div>

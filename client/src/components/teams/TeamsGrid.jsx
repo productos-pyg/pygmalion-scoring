@@ -12,7 +12,7 @@ const TeamsGrid = ({ auth, teams = [], loading }) => {
           {teams.length > 0 ? (
             teams.map((team) => <TeamCard key={team._id} team={team} auth={auth} />)
           ) : (
-            <h4>Todavía no hay equipos</h4>
+            <h4>There are no teams yet</h4>
           )}
         </div>
       )}

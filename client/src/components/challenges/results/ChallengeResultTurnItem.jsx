@@ -28,8 +28,8 @@ const ChallengeResultTurnItem = ({
   return (
     <div key={turn._id} className="d-flex justify-content-center">
       <span>
-        <strong>Turno {index + 1}:</strong> {turn.totalPoints} pts{" "}
-        <strong>Juez: </strong>
+        <strong>Turn {index + 1}:</strong> {turn.totalPoints} points{" "}
+        <strong>Judge: </strong>
         {"judgeName" in turn ? turn.judgeName : ""}{" "}
         {userAuth.role === "Admin" && (
           <span>
@@ -37,13 +37,13 @@ const ChallengeResultTurnItem = ({
               className="btn btn-sm btn-primary m-1"
               onClick={() => handleShowEdit(turn._id)}
             >
-              Editar
+              Edit
             </button>{" "}
             <button
               className="btn btn-sm btn-danger m-1"
               onClick={handleDeleteScore}
             >
-              Eliminar
+              Remove
             </button>
             <ConfirmModal
               show={showConfirm}

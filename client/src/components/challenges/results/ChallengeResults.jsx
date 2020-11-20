@@ -132,19 +132,19 @@ const ChallengeResults = ({
                     to={`/events/${match.params.eventSlug}/${match.params.challengeSlug}/score`}
                     className="btn btn-warning m-2"
                   >
-                    <i className="fas fa-tasks"></i> Calificar
+                    <i className="fas fa-tasks"></i> Qualify
                   </Link>
                 )}
             </div>
             <button className="btn btn-info m-2" onClick={() => setSeconds(0)}>
-              Recargar ( <i className="fas fa-hourglass-start"></i> {seconds} )
+            Recharge ( <i className="fas fa-hourglass-start"></i> {seconds} )
             </button>
           </div>
 
           <div className="card  mb-4">
             <div className="card-header">
               <h2 className="text-primary">
-                <i className="fas fa-list"></i> Puntajes reto {challenge.name}
+                <i className="fas fa-list"></i> Challenge scores {challenge.name}
               </h2>
             </div>
 
@@ -154,13 +154,13 @@ const ChallengeResults = ({
                   <thead className="thead-light">
                     <tr>
                       <th></th>
-                      <th>Puesto</th>
-                      <th>Nombre Equipo</th>
-                      <th>Institución</th>
-                      <th>Ciudad</th>
-                      <th>Top Máx ({challenge.topMaxTurns})</th>
-                      <th>Acumulado</th>
-                      <th>Turnos</th>
+                      <th>Position</th>
+                      <th>Team name</th>
+                      <th>Institution</th>
+                      <th>City</th>
+                      <th>Top Max ({challenge.topMaxTurns})</th>
+                      <th>Aggregate</th>
+                      <th>Turns</th>
                     </tr>
                   </thead>
                   <tbody>

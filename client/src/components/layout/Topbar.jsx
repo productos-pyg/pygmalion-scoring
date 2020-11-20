@@ -44,7 +44,7 @@ const Topbar = ({
         <Nav className="mr-auto">
           {/* <Nav.Link href="/">Inicio</Nav.Link> */}
           <Nav.Link href="/events">
-            <i className="fas fa-calendar"></i> Eventos
+            <i className="fas fa-calendar"></i> Events
           </Nav.Link>
           {role === "Admin" && (
             <NavDropdown
@@ -60,16 +60,16 @@ const Topbar = ({
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="/admin/events">
-                <i className="fas fa-calendar"></i> Eventos
+                <i className="fas fa-calendar"></i> Events
               </NavDropdown.Item>
               <NavDropdown.Item href="/admin/challenges">
-                <i className="fas fa-trophy"></i> Retos
+                <i className="fas fa-trophy"></i> Challenges
               </NavDropdown.Item>
               <NavDropdown.Item href="/admin/users">
-                <i className="fas fa-user"></i> Usuarios
+                <i className="fas fa-user"></i> Users
               </NavDropdown.Item>
               <NavDropdown.Item href="/admin/teams">
-                <i className="fas fa-users"></i> Equipos
+                <i className="fas fa-users"></i> Teams
               </NavDropdown.Item>
             </NavDropdown>
           )}
@@ -87,19 +87,19 @@ const Topbar = ({
               id="basic-nav-dropdown"
             >
               {role === "User" && (
-                <NavDropdown.Item href="/user/teams">Mis Equipos</NavDropdown.Item>
+                <NavDropdown.Item href="/user/teams">My teams</NavDropdown.Item>
               )}
               <NavDropdown.Item href="/user">
-                <i className="fas fa-id-card"></i> Perfil
+                <i className="fas fa-id-card"></i> Profile
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#" onClick={handleLogout}>
-                <i className="fas fa-sign-out"></i> Salir
+                <i className="fas fa-sign-out"></i> Exit
               </NavDropdown.Item>
             </NavDropdown>
           ) : (
             <Nav.Link href="/auth/login">
-              <i className="fas fa-sign-in"></i> Ingreso
+              <i className="fas fa-sign-in"></i> Entry
             </Nav.Link>
           )}
         </Nav>

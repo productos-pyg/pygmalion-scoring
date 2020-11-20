@@ -41,14 +41,14 @@ const UserPage = ({
       <div className="card  my-4">
         <div className="card-header">
           <h2 className="text-primary">
-            <i className="fas fa-id-card"></i> Perfil
+            <i className="fas fa-id-card"></i> Profile
           </h2>
         </div>
         <div className="card-body">
           <div className="row">
             <div className="col">
               <div className="row">
-                <p className="col-md-3 text-primary">Nombre:</p>
+                <p className="col-md-3 text-primary">Name:</p>
                 <p className="col-md-6">
                   {userAuth.firstName} {userAuth.lastName}
                 </p>
@@ -60,22 +60,22 @@ const UserPage = ({
               </div>
 
               <div className="row">
-                <p className="col-md-3 text-primary">Institución Educativa:</p>
+                <p className="col-md-3 text-primary">Educational institution:</p>
                 <p className="col-md-6">{userAuth.institution}</p>
               </div>
 
               <div className="row">
-                <p className="col-md-3 text-primary">Ciudad:</p>
+                <p className="col-md-3 text-primary">City:</p>
                 <p className="col-md-6">{userAuth.city}</p>
               </div>
 
               <div className="row">
-                <p className="col-md-3 text-primary">País:</p>
+                <p className="col-md-3 text-primary">Country:</p>
                 <p className="col-md-6">{userAuth.country}</p>
               </div>
 
               <div className="row">
-                <p className="col-md-3 text-primary">Acerca de mí:</p>
+                <p className="col-md-3 text-primary">About me:</p>
                 <p className="col-md-6">{userAuth.bio}</p>
               </div>
             </div>
@@ -87,7 +87,7 @@ const UserPage = ({
             to={`/user/edit/${userAuth._id}`}
             className="btn btn-primary mb-1 mr-1"
           >
-            <i className="fas fa-user"></i> Editar Perfil
+            <i className="fas fa-user"></i> Edit profile
           </Link>
           <button
             onClick={handleDeleteUser}
@@ -100,7 +100,7 @@ const UserPage = ({
             ) : (
               <i className="fas fa-user-minus"></i>
             )}{" "}
-            Eliminar Cuenta
+            Delete account
           </button>
           <ConfirmModal
             show={showConfirm}

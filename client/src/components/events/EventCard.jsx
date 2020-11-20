@@ -32,15 +32,15 @@ const EventCard = ({
             </div>
             <div className="col-sm">
               <p className="card-text">
-                <strong>Descripción: </strong>
+                <strong>Description: </strong>
                 {description}
               </p>
               <p className="card-text">
-                <strong>Año: </strong>
+                <strong>Year: </strong>
                 {year}
               </p>
               <p className="card-text">
-                <strong>Retos: </strong>
+                <strong>Challenges: </strong>
                 {challenges.length > 0 &&
                   challenges.map((challenge) => (
                     <span className="badge badge-primary m-1" key={challenge._id}>
@@ -49,7 +49,7 @@ const EventCard = ({
                   ))}
               </p>
               <p className="card-text">
-                <strong>Etapa: </strong>
+                <strong>Stage: </strong>
                 {getStage(stage)}
               </p>
             </div>
@@ -58,11 +58,11 @@ const EventCard = ({
         <div className="card-footer">
           {auth.isAuth && auth.userAuth.role === "Admin" && (
             <Link to={`/admin/events/edit/${_id}`} className="btn btn-dark m-1">
-              <i className="fas fa-edit"></i> Editar
+              <i className="fas fa-edit"></i> Edit
             </Link>
           )}
           <Link to={`/events/${slug}`} className="btn btn-primary m-1">
-            <i className="fas fa-trophy"></i> Ver Retos
+            <i className="fas fa-trophy"></i> See challenges
           </Link>
         </div>
       </div>

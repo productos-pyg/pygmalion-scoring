@@ -13,9 +13,9 @@ const TeamsPage = ({ auth, team, getTeams }) => {
 
   return (
     <div>
-      <h2 className="text-primary my-3">Mis Equipos</h2>
+      <h2 className="text-primary my-3">My teams</h2>
       <Link to="/user/teams/add" className="btn btn-primary my-2">
-        Agregar Equipo
+        Add team
       </Link>
       <TeamsGrid teams={team.teams} loading={team.loading} auth={auth} />
     </div>
