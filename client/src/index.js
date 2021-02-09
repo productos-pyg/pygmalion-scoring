@@ -8,8 +8,6 @@ import axios from "axios";
 import "./index.css";
 import "./bootstrap-theme.css";
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
 // axios.defaults.baseURL = `http://localhost:${process.PORT}/api`;
 axios.defaults.headers.post["Content-Type"] = "application/json";
 
