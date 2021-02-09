@@ -5,7 +5,6 @@ import { layoutActions, userActions } from "./redux/actions";
 import Routes from "./components/routing/Routes";
 import Landing from "./components/layout/Landing";
 import Topbar from "./components/layout/Topbar";
-import React, { Component } from "react";
 import { TranslatorProvider } from "react-translate";
 import Button from './components/Button';
 
