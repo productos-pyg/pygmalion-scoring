@@ -77,12 +77,12 @@ const Register = ({ isAuth, loading, register, setAlert }) => {
       <div className="col-md-6 p-0">
         <div className="card">
           <div className="card-header">
-            <h2 className="text-primary">Coaches registration</h2>
+            <h2 className="text-primary">Registro Entrenadores</h2>
           </div>
           <div className="card-body">
             <form className="form" onSubmit={handleSubmit}>
               <div className="form-group">
-                <label>Name*</label>
+                <label>Nombres*</label>
                 <input
                   className="form-control"
                   type="text"
@@ -94,7 +94,7 @@ const Register = ({ isAuth, loading, register, setAlert }) => {
                 />
               </div>
               <div className="form-group">
-                <label>Last name*</label>
+                <label>Apellidos*</label>
                 <input
                   className="form-control"
                   type="text"
@@ -118,7 +118,7 @@ const Register = ({ isAuth, loading, register, setAlert }) => {
                 />
               </div>
               <div className="form-group">
-                <label>Educational institution*</label>
+                <label>Institución Educativa*</label>
                 <input
                   className="form-control"
                   type="text"
@@ -131,7 +131,7 @@ const Register = ({ isAuth, loading, register, setAlert }) => {
               </div>
 
               <div className="form-group">
-                <label>City*</label>
+                <label>Ciudad*</label>
                 <input
                   className="form-control"
                   type="text"
@@ -144,7 +144,7 @@ const Register = ({ isAuth, loading, register, setAlert }) => {
               </div>
 
               <div className="form-group">
-                <label>Country*</label>
+                <label>País*</label>
                 <input
                   className="form-control"
                   type="text"
@@ -157,7 +157,7 @@ const Register = ({ isAuth, loading, register, setAlert }) => {
               </div>
 
               <div className="form-group">
-                <label>Tell us a bit about yourself</label>
+                <label>Cuéntanos un poco sobre ti</label>
                 <textarea
                   className="form-control"
                   placeholder="Una breve biografía tuya"
@@ -169,7 +169,7 @@ const Register = ({ isAuth, loading, register, setAlert }) => {
 
               <div className="form-row">
                 <div className="form-group mr-3">
-                  <label>Password*</label>
+                  <label>Contraseña*</label>
                   <input
                     type="password"
                     className="form-control"
@@ -182,7 +182,7 @@ const Register = ({ isAuth, loading, register, setAlert }) => {
                 </div>
 
                 <div className="form-group">
-                  <label>Confirm Password*</label>
+                  <label>Confirmar Contraseña*</label>
                   <input
                     type="password"
                     className="form-control"
@@ -212,7 +212,7 @@ const Register = ({ isAuth, loading, register, setAlert }) => {
                 />{" "}
                 <label htmlFor="register-agree">
                   {" "}
-                  I accept terms and conditions{" "}
+                  Acepto Términos y Condiciones{" "}
                 </label>
               </div>
 
@@ -224,12 +224,12 @@ const Register = ({ isAuth, loading, register, setAlert }) => {
                 {loading && (
                   <span className="spinner-border spinner-border-sm mr-1"></span>
                 )}
-                Register
+                Registrar
               </button>
 
               <p className="text-center">
                 <small className="text-muted text-center">
-                  ¿Already have an account? <Link to="login">Login</Link>.
+                  ¿Ya tienes cuenta? <Link to="login">Ingresar</Link>.
                 </small>
               </p>
             </form>

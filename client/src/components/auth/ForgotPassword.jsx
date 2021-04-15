@@ -38,7 +38,7 @@ const ForgotPassword = ({ auth, forgotPassword, history }) => {
       <div className="col-lg-6 p-0">
         <div className="card">
           <div className="card-header">
-            <h2 className="text-primary">Recover password</h2>
+            <h2 className="text-primary">Recuperar Contraseña</h2>
           </div>
           <div className="card-body">
             <form onSubmit={handleSubmit}>
@@ -63,7 +63,7 @@ const ForgotPassword = ({ auth, forgotPassword, history }) => {
                   {auth.loading && (
                     <span className="spinner-border spinner-border-sm mr-1"></span>
                   )}
-                  Send
+                  Enviar
                 </button>
                 <p className="text-center">
                   <small className="text-muted">
