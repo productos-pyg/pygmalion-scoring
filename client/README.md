@@ -1,6 +1,6 @@
 ## React Application for Scoring Robotics system
 
-Author: Alejandro Martinez @alejomartinez8
+Author: Pygmalion Tech 
 
-Demo: https://react-scoring-robot-app.herokuapp.com/
-API: https://github.com/alejomartinez8/api-scoring-robot
+Demo: https://pygmalion-scoring.herokuapp.com/
+API: https://github.com/productos-pyg/pygmalion-scoring.git

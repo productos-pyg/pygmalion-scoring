@@ -16,7 +16,7 @@ const EventsPage = ({ auth, event: { events, loading }, getEvents }) => {
       ) : (
         <Fragment>
           <h2 className="large text-primary">
-            <i className="fas fa-calendar"></i> Events
+            <i className="fas fa-calendar"></i> Eventos
           </h2>
           {events.length > 0 && events.filter((event) => event.active).length > 0 ? (
             events
@@ -26,7 +26,7 @@ const EventsPage = ({ auth, event: { events, loading }, getEvents }) => {
                 <EventCard key={event._id} event={event} auth={auth} />
               ))
           ) : (
-            <h4>No events yet</h4>
+            <h4>Todavía no hay eventos</h4>
           )}
         </Fragment>
       )}

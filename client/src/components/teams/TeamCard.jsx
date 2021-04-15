@@ -9,8 +9,8 @@ const TeamCard = ({ auth, team }) => {
         <div className="card-header d-flex flex-column">
           <h3 className="text-center flex-row">{team.name}</h3>
           <h4 className="text-center flex-row">{team.event.slug}</h4>
-          <h4 className="text-center flex-row">Challenge: {team.challenge.name}</h4>
-          <h4 className="text-center flex-row">Categorie: {team.category}</h4>
+          <h4 className="text-center flex-row">Reto: {team.challenge.name}</h4>
+          <h4 className="text-center flex-row">Categoría: {team.category}</h4>
           <p className="text-center flex-row">
             {team.user.city} / {team.user.country}
           </p>
@@ -45,9 +45,9 @@ const TeamCard = ({ auth, team }) => {
               to={`/user/teams/edit/${team._id}`}
               className="btn btn-outline-primary btn-sm"
             >
-              Modify
+              Modificar
             </Link>
-            <button className="btn btn-outline-danger btn-sm mx-1">Remove</button>
+            <button className="btn btn-outline-danger btn-sm mx-1">Eliminar</button>
           </div>
         )}
       </div>

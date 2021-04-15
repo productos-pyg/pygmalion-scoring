@@ -17,7 +17,7 @@ const ModalEditScoringTurn = ({
       onHide={() => setShowEdit(false)}
     >
       <Modal.Header closeButton>
-        <Modal.Title>Modify turn</Modal.Title>
+        <Modal.Title>Modificar Turno</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <ChallengeScoreForm turn={turn} handleUpdateScore={handleUpdateScore} />

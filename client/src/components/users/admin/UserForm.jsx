@@ -99,7 +99,7 @@ const UserForm = ({
             <div className="card-body">
               <form className="form" onSubmit={handleSubmit}>
                 <div className="form-group">
-                  <label>Name*</label>
+                  <label>Nombres*</label>
                   <input
                     className="form-control"
                     type="text"
@@ -110,7 +110,7 @@ const UserForm = ({
                   />
                 </div>
                 <div className="form-group">
-                  <label>Last name*</label>
+                  <label>Apellidos*</label>
                   <input
                     className="form-control"
                     type="text"
@@ -132,7 +132,7 @@ const UserForm = ({
                   />
                 </div>
                 <div className="form-group">
-                  <label>Educational institution</label>
+                  <label>Institución Educativa</label>
                   <input
                     className="form-control"
                     type="text"
@@ -143,7 +143,7 @@ const UserForm = ({
                 </div>
 
                 <div className="form-group">
-                  <label>City</label>
+                  <label>Ciudad</label>
                   <input
                     className="form-control"
                     type="text"
@@ -154,7 +154,7 @@ const UserForm = ({
                 </div>
 
                 <div className="form-group">
-                  <label>Country</label>
+                  <label>País</label>
                   <input
                     className="form-control"
                     type="text"
@@ -173,8 +173,8 @@ const UserForm = ({
                       value={role}
                       onChange={handleChange}
                     >
-                      <option value="User">User</option>
-                      <option value="Judge">Judge</option>
+                      <option value="User">Usuario</option>
+                      <option value="Judge">Juez</option>
                       <option value="Admin">Admin</option>
                     </select>
                   </div>
@@ -182,7 +182,7 @@ const UserForm = ({
 
                 {userAuth.id === user._id && (
                   <div className="form-group">
-                    <label>Tell us a bit about yourself</label>
+                    <label>Cuéntanos un poco sobre ti</label>
                     <textarea
                       className="form-control"
                       placeholder="Una breve biografía tuya"
@@ -195,14 +195,14 @@ const UserForm = ({
 
                 {match.params.id && (
                   <div>
-                    <h3 className="pt-3">Change Password</h3>
-                    <p>Leave blank to keep the same password</p>
+                    <h3 className="pt-3">Cambiar Contraseña</h3>
+                    <p>Dejar en blanco para conservar la misma contraseña</p>
                   </div>
                 )}
 
                 <div className="form-row">
                   <div className="form-group mr-3">
-                    <label>Password{!match.params.id && "*"}</label>
+                    <label>Contraseña{!match.params.id && "*"}</label>
                     <input
                       type="password"
                       className="form-control"
@@ -215,7 +215,7 @@ const UserForm = ({
                   </div>
 
                   <div className="form-group">
-                    <label>Confirm Password{!match.params.id && "*"}</label>
+                    <label>Confirmar Contraseña{!match.params.id && "*"}</label>
                     <input
                       type="password"
                       className="form-control"
@@ -237,10 +237,10 @@ const UserForm = ({
                     {loading && (
                       <span className="spinner-border spinner-border-sm m-1"></span>
                     )}
-                    Save
+                    Guardar
                   </button>
                   <ButtonBack className="btn btn-outline-primary mr-2 mb-2">
-                    Cancel
+                    Cancelar
                   </ButtonBack>
                 </div>
               </form>

@@ -77,16 +77,16 @@ const TeamsList = ({
         <Fragment>
           <div className="card  mb-4">
             <div className="card-header">
-              <h2 className="text-primary">Manage teams</h2>
+              <h2 className="text-primary">Administrar Equipos</h2>
             </div>
 
             <div className="card-body">
               <form className="form-inline mb-3">
                 <Link className="btn btn-primary mr-2" to={`${path}/add`}>
-                  Add teams
+                  Agregar Equipos
                 </Link>
                 <div className="form-group">
-                  <label className="mx-1">Event: </label>
+                  <label className="mx-1">Evento: </label>
                   <select
                     name="event"
                     id="event"
@@ -126,13 +126,13 @@ const TeamsList = ({
                 <table className="table table-striped ">
                   <thead className="thead-dark">
                     <tr>
-                      <th>Team name</th>
-                      <th>Event</th>
-                      <th>Categorie</th>
-                      <th>Challenge</th>
+                      <th>Nombre Equipo</th>
+                      <th>Evento</th>
+                      <th>Categoría</th>
+                      <th>Reto</th>
                       {/* <th>Entrenador</th> */}
-                      <th>Registered</th>
-                      <th>Actions</th>
+                      <th>Registrado</th>
+                      <th>Acciones</th>
                     </tr>
                   </thead>
                   <tbody>

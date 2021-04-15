@@ -30,21 +30,21 @@ const UserList = ({
         <Fragment>
           <div className="card  mb-4">
             <div className="card-header">
-              <h2 className="text-primary">Manage Users</h2>
+              <h2 className="text-primary">Administrar Usuarios</h2>
             </div>
 
             <div className="card-body mb-2">
               <Link to={`${path}/add`} className="btn btn-sm btn-primary mb-2">
-                Add User
+                Agregar Usuario
               </Link>
               <div className="table-responsive">
                 <table className="table table-striped ">
                   <thead className="thead-dark">
                     <tr>
-                      <th>Full name</th>
+                      <th>Nombre Completo</th>
                       <th>Email</th>
                       <th>Role</th>
-                      <th>Actions</th>
+                      <th>Acciones</th>
                     </tr>
                   </thead>
                   <tbody>
