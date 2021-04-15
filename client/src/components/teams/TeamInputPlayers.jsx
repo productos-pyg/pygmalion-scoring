@@ -33,7 +33,7 @@ const TeamInputPlayers = ({ addPlayer, index, player, required = false }) => {
     <Fragment>
       <div className="form-group row">
         <label className="col-md-4 col-form-group" htmlFor="name">
-          Full name {required && "*"}
+          Nombre Completo {required && "*"}
         </label>
         <div className="col-md">
           <input
@@ -50,7 +50,7 @@ const TeamInputPlayers = ({ addPlayer, index, player, required = false }) => {
 
       <div className="form-group row">
         <label className="col-md-4 col-form-group" htmlFor="legalId">
-        Birthdate: {required && "*"}
+          Fecha de Nacimiento: {required && "*"}
         </label>
         <div className="col-md">
           <input
@@ -67,7 +67,7 @@ const TeamInputPlayers = ({ addPlayer, index, player, required = false }) => {
 
       <div className="form-group row">
         <label className="col-md-4 col-form-group" htmlFor="legalId">
-          ID:
+          Identificación:
         </label>
         <div className="col-md">
           <input
@@ -83,7 +83,7 @@ const TeamInputPlayers = ({ addPlayer, index, player, required = false }) => {
 
       <div className="form-group row">
         <label className="col-md-4 col-form-group" htmlFor="gender">
-          Gender:
+          Género:
         </label>
         <div className="col-md">
           <select
@@ -94,8 +94,8 @@ const TeamInputPlayers = ({ addPlayer, index, player, required = false }) => {
             onChange={handleChange}
           >
             <option value=""></option>
-            <option value="female">Female</option>
-            <option value="male">Male</option>
+            <option value="female">Femenino</option>
+            <option value="male">Masculino</option>
           </select>
         </div>
       </div>

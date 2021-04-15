@@ -58,10 +58,10 @@ const EventListItem = ({ event, actionConfirm, handleToggleActiveEvent }) => {
           to={`events/edit/${event._id}`}
           className="btn btn-sm btn-primary mr-1"
         >
-          Edit
+          Editar
         </Link>
         <button className="btn btn-sm btn-danger" onClick={handleDeleteButton}>
-          Remove
+          Eliminar
         </button>
         <ConfirmModal
           show={showConfirm}

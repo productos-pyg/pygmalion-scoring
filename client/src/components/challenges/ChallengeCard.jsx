@@ -23,7 +23,7 @@ const ChallengeCard = ({ auth, challenge }) => {
           <div className="col">
             <p className="text-secondary">{challenge.description}</p>
             <p>
-              Categories:{" "}
+              Categorías:{" "}
               {challenge.categories !== [] &&
                 challenge.categories.map((category, index) => (
                   <span key={index} className="badge badge-pill badge-info mx-1">
@@ -40,14 +40,14 @@ const ChallengeCard = ({ auth, challenge }) => {
             to={`/admin/challenges/edit/${challenge._id}`}
             className="btn btn-dark m-1"
           >
-            <i className="fas fa-edit"></i> Edit
+            <i className="fas fa-edit"></i> Editar
           </Link>
         )}
         <Link
           to={`${match.url}/${challenge.slug}/results`}
           className="btn btn-primary m-1"
         >
-          <i className="fas fa-list"></i> Results
+          <i className="fas fa-list"></i> Resultados
         </Link>
 
         {challenge.playoffs && (
@@ -65,7 +65,7 @@ const ChallengeCard = ({ auth, challenge }) => {
               to={`${match.url}/${challenge.slug}/score`}
               className="btn btn-warning m-1"
             >
-              <i className="fas fa-tasks"></i> Qualify
+              <i className="fas fa-tasks"></i> Calificar
             </Link>
           )}
       </div>

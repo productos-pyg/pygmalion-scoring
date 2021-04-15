@@ -28,10 +28,10 @@ const UserListItem = ({ user, actionConfirm }) => {
       <td>{user.role}</td>
       <td style={{ whiteSpace: "nowrap" }}>
         <Link to={`users/edit/${user._id}`} className="btn btn-sm btn-primary mr-1">
-          Edit
+          Editar
         </Link>
         <button onClick={handleDeleteUser} className="btn btn-sm btn-danger">
-          Remove
+          Eliminar
         </button>
         <ConfirmModal
           show={showConfirm}

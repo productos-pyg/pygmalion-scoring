@@ -172,7 +172,7 @@ const EventForm = ({
         <Spinner animation="border" variant="primary" />
       ) : (
         <Fragment>
-          <ButtonBack className="btn btn-primary mr-1 my-2">Back</ButtonBack>
+          <ButtonBack className="btn btn-primary mr-1 my-2">Atrás</ButtonBack>
           <div className="card  my-2">
             <div className="card-header">
               <h2 className="text-primary">
@@ -183,7 +183,7 @@ const EventForm = ({
               {/* Form */}
               <form className="form">
                 <div className="form-group">
-                  <label htmlFor="name">Event name*</label>
+                  <label htmlFor="name">Nombre Evento*</label>
                   <input
                     type="text"
                     className="form-control"
@@ -196,7 +196,7 @@ const EventForm = ({
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="slug">Short name(url)*</label>
+                  <label htmlFor="slug">Nombre Corto(url)*</label>
                   <input
                     type="text"
                     className="form-control"
@@ -209,7 +209,7 @@ const EventForm = ({
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="imageURL">URL Image</label>
+                  <label htmlFor="imageURL">URL Imagen</label>
                   <input
                     type="text"
                     className="form-control"
@@ -221,7 +221,7 @@ const EventForm = ({
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="year">Year</label>
+                  <label htmlFor="year">Año</label>
                   <input
                     type="number"
                     className="form-control"
@@ -233,7 +233,7 @@ const EventForm = ({
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="description">Description</label>
+                  <label htmlFor="description">Descripcion</label>
                   <textarea
                     className="form-control"
                     id="description"
@@ -244,7 +244,7 @@ const EventForm = ({
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="stage">Stage</label>
+                  <label htmlFor="stage">Etapa</label>
                   <select
                     className="form-control"
                     name="stage"
@@ -252,16 +252,16 @@ const EventForm = ({
                     value={stage}
                     onChange={handleChange}
                   >
-                    <option value="registration">Teams registration</option>
-                    <option value="scoring">Qualifying</option>
-                    <option value="finished">Finished</option>
+                    <option value="registration">Registro Equipos</option>
+                    <option value="scoring">Calificando</option>
+                    <option value="finished">Terminado</option>
                   </select>
                 </div>
 
                 <div className="form-row">
                   <div className="form-group col-md-6">
                     <label htmlFor="maxPlayersTeam">
-                    Maximum participants per team
+                      Máximo de participantes por equipo
                     </label>
                     <input
                       type="number"
@@ -276,7 +276,7 @@ const EventForm = ({
 
                   <div className="form-group col-md-6">
                     <label htmlFor="minPlayersTeam">
-                    Minimum of participants per team
+                      Mínimo de participantes por equipo
                     </label>
                     <input
                       type="number"
@@ -291,7 +291,7 @@ const EventForm = ({
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="categories">Categories</label>
+                  <label htmlFor="categories">Categorías</label>
                   <Select
                     isMulti
                     className="dropdown"
@@ -305,7 +305,7 @@ const EventForm = ({
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="challenges">Challenges</label>
+                  <label htmlFor="challenges">Retos</label>
                   <Select
                     isMulti
                     className="dropdown"
@@ -327,10 +327,10 @@ const EventForm = ({
                     {eventLoading && (
                       <span className="spinner-border spinner-border-sm mr-1"></span>
                     )}
-                    Save
+                    Guardar
                   </button>
                   <ButtonBack className="btn btn-outline-primary mr-2 mb-2">
-                    Cancel
+                    Cancelar
                   </ButtonBack>
                 </div>
               </form>

@@ -25,7 +25,7 @@ const ChallengeListItem = ({ challenge, actionConfirm, path }) => {
       <td>{challenge.slug}</td>
       <td>
         {challenge.available ? (
-          <span className="badge badge-pill badge-success">Yes</span>
+          <span className="badge badge-pill badge-success">Sí</span>
         ) : (
           <span className="badge badge-pill badge-danger">No</span>
         )}
@@ -42,10 +42,10 @@ const ChallengeListItem = ({ challenge, actionConfirm, path }) => {
           to={`${path}/edit/${challenge._id}`}
           className="btn btn-sm btn-primary mr-1"
         >
-          Edit
+          Editar
         </Link>
         <button className="btn btn-sm btn-danger" onClick={handleDeleteButton}>
-          Remove
+          Eliminar
         </button>
         <ConfirmModal
           show={showConfirm}

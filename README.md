@@ -2,7 +2,7 @@
 
 Version developed in MERN Stack (MongoDB, Express, React, NodeJS)
 
-Author: Alejandro Martínez
+Author: Pygmalion Tech
 
 ---
 

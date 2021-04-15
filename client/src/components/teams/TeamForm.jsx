@@ -231,7 +231,7 @@ const TeamForm = ({
 
                 <div className="form-group row">
                   <label className="col-md-4 col-form-group" htmlFor="name">
-                    Team name (*)
+                    Nombre Equipo (*)
                   </label>
                   <div className="col-md">
                     <input
@@ -248,7 +248,7 @@ const TeamForm = ({
 
                 <div className="form-group row">
                   <label className="col-md-4 col-form-group" htmlFor="institution">
-                  Institution
+                    Institución
                   </label>
                   <div className="col-md">
                     <input
@@ -264,7 +264,7 @@ const TeamForm = ({
 
                 <div className="form-group row">
                   <label className="col-md-4 col-form-group" htmlFor="city">
-                    City
+                    Ciudad
                   </label>
                   <div className="col-md">
                     <input
@@ -281,7 +281,7 @@ const TeamForm = ({
 
                 <div className="form-group row">
                   <label className="col-md-4 col-form-group" htmlFor="country">
-                    Country
+                    País
                   </label>
                   <div className="col-md">
                     <input
@@ -318,7 +318,7 @@ const TeamForm = ({
                 {auth.userAuth.role === "Admin" && (
                   <div className="form-group row">
                     <label className="col-md-4 col-form-group" htmlFor="user">
-                      Register
+                      Registrar
                     </label>
                     <div className="col-md">
                       <label className="switch">
@@ -350,10 +350,10 @@ const TeamForm = ({
                     {loading && (
                       <span className="spinner-border spinner-border-sm mr-1"></span>
                     )}
-                    Save
+                    Guardar
                   </button>
                   <ButtonBack className="btn btn-outline-primary mr-2 mb-2">
-                    Cancel
+                    Cancelar
                   </ButtonBack>
                 </div>
               </form>

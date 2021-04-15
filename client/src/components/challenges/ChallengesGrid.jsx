@@ -22,17 +22,17 @@ const ChallengesGrid = ({ auth, event, loading, getEventBySlug, match }) => {
       ) : (
         <Fragment>
           <div className="my-2">
-            <ButtonBack className="btn btn-primary mr-1 my-2">Back</ButtonBack>
+            <ButtonBack className="btn btn-primary mr-1 my-2">Atrás</ButtonBack>
             {auth.isAuth && auth.userAuth.role === "Admin" && (
               <Link
                 to={`/admin/events/edit/${event._id}`}
                 className="btn btn-outline-primary"
               >
-                Edit Event
+                Editar Evento
               </Link>
             )}
           </div>
-          <h2 className="text-primary m-2">{event.name} - Challenges</h2>
+          <h2 className="text-primary m-2">{event.name} - Retos</h2>
 
           {challenges !== undefined ? (
             <Fragment>
@@ -45,8 +45,7 @@ const ChallengesGrid = ({ auth, event, loading, getEventBySlug, match }) => {
               ))}
             </Fragment>
           ) : (
-            <h4>
-            There are no challenges</h4>
+            <h4>No hay retos</h4>
           )}
         </Fragment>
       )}

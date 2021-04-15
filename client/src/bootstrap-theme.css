@@ -4220,7 +4220,7 @@ input[type="button"].btn-block {
   text-decoration: none;
 }
 .nav-link.disabled {
-  color: #ffffff;
+  color: #6c757d;
   pointer-events: none;
   cursor: default;
 }
@@ -6568,7 +6568,7 @@ a.bg-dark:hover,
 a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
-  background-color: #ffffff !important;
+  background-color: #1d2124 !important;
 }
 
 .bg-white {
@@ -10270,7 +10270,6 @@ a.text-dark:focus {
 .text-body {
   color: #212529 !important;
 }
-
 
 .text-muted {
   color: #6c757d !important;
