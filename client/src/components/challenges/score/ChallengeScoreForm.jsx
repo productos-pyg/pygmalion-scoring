@@ -220,7 +220,7 @@ const CallengeScoreForm = ({
     if (team) {
       setTimer(!timer);
     } else {
-      setAlert("You must choose a team", "warning");
+      setAlert("Debes elegir un equipo", "warning");
     }
   };
 
@@ -244,7 +244,7 @@ const CallengeScoreForm = ({
       });
     } else {
       handleUpdateScore(turn._id, formData);
-      console.log("Update turn", formData);
+      console.log("acutalizar turno", formData);
     }
   };
 
@@ -261,8 +261,8 @@ const CallengeScoreForm = ({
             <div className="card-header">
               <h2 className="text-primary">
                 {Object.keys(turn).length > 0
-                  ? `Edit Turn`
-                  : `Qualify ${challenge.name} - ${challenge.categories}`}
+                  ? `Editar Turno`
+                  : `Calificar ${challenge.name} - ${challenge.categories}`}
               </h2>
             </div>
 
@@ -321,11 +321,11 @@ const CallengeScoreForm = ({
                         >
                           {!timer ? (
                             <>
-                              <i className="fas fa-play"></i> Start
+                              <i className="fas fa-play"></i> Iniciar
                             </>
                           ) : (
                             <>
-                              <i className="fas fa-stop"></i> Stop
+                              <i className="fas fa-stop"></i> Parar
                             </>
                           )}
                         </button>
@@ -349,8 +349,8 @@ const CallengeScoreForm = ({
                     <table className="table table-striped ">
                       <thead className="thead-dark">
                         <tr>
-                          <th>Task</th>
-                          {penaltyFlag && <th>Penalty</th>}
+                          <th>Tareas</th>
+                          {penaltyFlag && <th>Penalidad</th>}
                         </tr>
                       </thead>
 
