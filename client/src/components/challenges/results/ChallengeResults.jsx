@@ -144,7 +144,7 @@ const ChallengeResults = ({
           <div className="card  mb-4">
             <div className="card-header">
               <h2 className="text-primary">
-                <i className="fas fa-list"></i> Challenge Scores {challenge.name}
+                <i className="fas fa-list"></i> Challenge scores {challenge.name}
               </h2>
             </div>
 
@@ -157,7 +157,7 @@ const ChallengeResults = ({
                       <th>Position</th>
                       <th>Team name</th>
                       <th>Institution</th>
-                      <th>Country</th>
+                      <th>City</th>
                       <th>Top Max ({challenge.topMaxTurns})</th>
                       <th>Aggregate</th>
                       <th>Turns</th>
