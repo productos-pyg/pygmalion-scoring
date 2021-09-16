@@ -201,18 +201,39 @@ const CallengeScoreForm = ({
   const [timer, setTimer] = useState(false);
   const [seconds, setSeconds] = useState(0);
 
+  const [mseconds, setmSeconds] = useState(0); //
+
   useEffect(() => {
     if (seconds === 0) {
       setTimer(false);
     }
 
-    if (timer) {
+    /*if (timer) {
       const interval = setInterval(() => {
         setSeconds((seconds) => seconds - 1);
       }, 1000);
       return () => clearInterval(interval);
     }
-  }, [timer, seconds]);
+  }, [timer, seconds]);*/
+
+    if (timer) {//
+      const interval = setInterval(() => { //
+
+        if(mseconds===0){ //
+
+          setmSeconds(999); //
+          setSeconds(seconds => seconds - 1); //
+
+        }else{ //
+
+          setmSeconds(mseconds => mseconds - 1); //
+
+        } //
+
+      }, 1);//
+      return () => clearInterval(interval);//
+    }//
+  }, [timer, seconds, mseconds]);//
 
   // handle stop or start Timer
   const handleSetTimer = (e) => {
@@ -309,7 +330,7 @@ const CallengeScoreForm = ({
                     <hr />
                     <div className="form-group row my-2 justify-content-center align-items-center">
                       <div className="display-4">
-                        <i className="fas fa-hourglass-start"></i> {seconds} (s)
+                        <i className="fas fa-hourglass-start"></i> {seconds}.{mseconds} (ms)
                       </div>
 
                       <div>
