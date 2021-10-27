@@ -208,8 +208,8 @@ const CallengeScoreForm = ({
 
     if (timer) {
       const interval = setInterval(() => {
-        setSeconds((seconds) => seconds - 1);
-      }, 1000);
+        setSeconds((seconds) => seconds - 0.01);
+      }, 10);
       return () => clearInterval(interval);
     }
   }, [timer, seconds]);
@@ -309,7 +309,7 @@ const CallengeScoreForm = ({
                     <hr />
                     <div className="form-group row my-2 justify-content-center align-items-center">
                       <div className="display-4">
-                        <i className="fas fa-hourglass-start"></i> {seconds} (cs)
+                        <i className="fas fa-hourglass-start"></i> {seconds.toFixed(2)} (cs)
                       </div>
 
                       <div>
