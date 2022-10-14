@@ -1,7 +1,7 @@
 import React from "react";
 
 const ChallengePlayoffs = () => {
-  return <div></div>;
+  return <div>PRUEBA</div>;
 };
 
 export default ChallengePlayoffs;
